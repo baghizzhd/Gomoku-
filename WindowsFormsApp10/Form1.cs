@@ -28,7 +28,7 @@ namespace WindowsFormsApp10
         {
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
             for(int i =0; i < 15; i++)
             {
@@ -51,8 +51,7 @@ namespace WindowsFormsApp10
             {
                 if(x > xmin[i] && x < xmax[i] && y > ymin[i] && y < ymax[i])
                 {
-                    MessageBox.Show(Convert.ToString(i));
-                    
+                    MessageBox.Show(Convert.ToString(i));                  
                 }
             }
         }
